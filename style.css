@@ -465,9 +465,21 @@ ul {
 }
 
 @media (max-width: 1023px) {
-  .hero-image {
-    display: none;
+  .hero {
+    flex-direction: column;
+    text-align: center;
   }
+
+  .hero-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    transform: none;
+    top: auto;
+    order: -1;
+    margin-bottom: var(--space-6);
+  }
+}
   
   .hero-content {
     max-width: 100%;
