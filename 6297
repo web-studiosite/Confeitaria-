@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khimi Delícias - Confeitaria Artesanal</title>
+  <meta name="description" content="Khimi Delícias - Confeitaria artesanal em Matola. Bolos, doces e novidades feitos com amor.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ============================================
+       HEADER / NAVEGAÇÃO
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <span class="logo-icon">🧁</span>
+          <span class="logo-text">Khimi Delícias</span>
+        </a>
+        
+        <!-- Menu Desktop -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#bolos" data-i18n="menu.bolos">Bolos</a></li>
+          <li><a href="#doces" data-i18n="menu.doces">Doces</a></li>
+          <li><a href="#novidades" data-i18n="menu.novidades">Novidades</a></li>
+          <li><a href="#contacto" data-i18n="menu.contacto">Contacto</a></li>
+        </ul>
+        
+        <!-- Ações -->
+        <div class="nav-actions">
+          <!-- Troca de Idioma -->
+          <button class="lang-btn" id="langBtn" aria-label="Mudar idioma">
+            <span class="lang-current">PT</span>
+            <i class="fas fa-globe"></i>
+          </button>
+          
+          <!-- Menu Mobile Toggle -->
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="hero-subtitle" data-i18n="hero.subtitle">Confeitaria Artesanal</span>
+      <h1 class="hero-title" data-i18n="hero.title">Khimi Delícias</h1>
+      <p class="hero-description" data-i18n="hero.description">
+        Bolos, doces e novidades feitos com amor e dedicação. 
+        Cada criação é uma obra de arte comestível, preparada especialmente para você.
+      </p>
+      <div class="hero-buttons">
+        <a href="#bolos" class="btn btn-primary" data-i18n="hero.cta1">Ver Produtos</a>
+        <a href="https://wa.me/258842644335" target="_blank" class="btn btn-whatsapp" data-i18n="hero.cta2">
+          <i class="fab fa-whatsapp"></i> Encomendar
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.jpg" alt="Khimi Delícias - Confeitaria" loading="eager">
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SEÇÃO BOLOS
+       ============================================ -->
+  <section class="products-section" id="bolos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="sections.bolos.tag">Nossos</span>
+        <h2 class="section-title" data-i18n="sections.bolos.title">Bolos</h2>
+        <p class="section-description" data-i18n="sections.bolos.description">
+          Bolos artesanais feitos com ingredientes selecionados e muito carinho.
+        </p>
+      </div>
+      
+      <div class="products-grid" id="bolosGrid" data-category="bolos">
+        <!-- Produtos serão carregados via JavaScript -->
+      </div>
+      
+      <div class="load-more-container">
+        <button class="btn btn-outline load-more-btn" data-category="bolos" data-i18n="buttons.loadMore">
+          <i class="fas fa-plus"></i> Carregar mais
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SEÇÃO DOCES
+       ============================================ -->
+  <section class="products-section section-alt" id="doces">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="sections.doces.tag">Deliciosos</span>
+        <h2 class="section-title" data-i18n="sections.doces.title">Doces</h2>
+        <p class="section-description" data-i18n="sections.doces.description">
+          Brigadeiros, trufas, cookies e muito mais para adoçar seu dia.
+        </p>
+      </div>
+      
+      <div class="products-grid" id="docesGrid" data-category="doces">
+        <!-- Produtos serão carregados via JavaScript -->
+      </div>
+      
+      <div class="load-more-container">
+        <button class="btn btn-outline load-more-btn" data-category="doces" data-i18n="buttons.loadMore">
+          <i class="fas fa-plus"></i> Carregar mais
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SEÇÃO NOVIDADES
+       ============================================ -->
+  <section class="products-section" id="novidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="sections.novidades.tag">Lançamentos</span>
+        <h2 class="section-title" data-i18n="sections.novidades.title">Novidades</h2>
+        <p class="section-description" data-i18n="sections.novidades.description">
+          As últimas criações da Khimi Delícias. Experimente algo novo!
+        </p>
+      </div>
+      
+      <div class="products-grid" id="novidadesGrid" data-category="novidades">
+        <!-- Produtos serão carregados via JavaScript -->
+      </div>
+      
+      <div class="load-more-container">
+        <button class="btn btn-outline load-more-btn" data-category="novidades" data-i18n="buttons.loadMore">
+          <i class="fas fa-plus"></i> Carregar mais
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SEÇÃO SOBRE / CONTATO
+       ============================================ -->
+  <section class="about-section section-alt" id="contacto">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Informações -->
+        <div class="about-info">
+          <span class="section-tag" data-i18n="sections.about.tag">Sobre</span>
+          <h2 class="section-title" data-i18n="sections.about.title">Khimi Delícias</h2>
+          <p class="about-text" data-i18n="sections.about.text1">
+            Somos uma confeitaria artesanal localizada em Matola Liberdade, 
+            dedicada a criar momentos doces e memoráveis para nossos clientes.
+          </p>
+          <p class="about-text" data-i18n="sections.about.text2">
+            Cada produto é feito com ingredientes de qualidade, 
+            muito amor e atenção aos detalhes. Seja para uma ocasião especial 
+            ou apenas para se presentear, estamos aqui para adoçar seu dia.
+          </p>
+          
+          <div class="about-owner">
+            <div class="owner-avatar">
+              <span>👩‍🍳</span>
+            </div>
+            <div class="owner-info">
+              <span class="owner-name">Khimi</span>
+              <span class="owner-role" data-i18n="sections.about.owner">Confeiteira & Fundadora</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Informações de Contato -->
+        <div class="about-contact">
+          <h3 data-i18n="sections.contact.title">Contacto</h3>
+          
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span data-i18n="sections.contact.address">Matola Liberdade, Rua de Maputo n° 333</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <a href="tel:+258842644335">+258 84 264 4335</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <a href="https://wa.me/258842644335" target="_blank">WhatsApp</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <span data-i18n="sections.contact.hours">Seg - Sáb: 8h às 18h</span>
+            </div>
+          </div>
+          
+          <h4 data-i18n="sections.payment.title">Pagamentos</h4>
+          <div class="payment-methods">
+            <span class="payment-tag"><i class="fas fa-mobile-alt"></i> M-Pesa</span>
+            <span class="payment-tag"><i class="fas fa-university"></i> Conta BIM</span>
+          </div>
+          
+          <h4 data-i18n="sections.social.title">Redes Sociais</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/258842644335" class="social-link whatsapp" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">🧁</span>
+          <span class="footer-name">Khimi Delícias</span>
+          <p data-i18n="footer.slogan">Doçura em cada mordida</p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#bolos" data-i18n="menu.bolos">Bolos</a>
+          <a href="#doces" data-i18n="menu.doces">Doces</a>
+          <a href="#novidades" data-i18n="menu.novidades">Novidades</a>
+          <a href="#contacto" data-i18n="menu.contacto">Contacto</a>
+        </div>
+        
+        <div class="footer-copy">
+          <span>&copy; 2024 Khimi Delícias. <span data-i18n="footer.rights">Todos os direitos reservados.</span></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       BOTÃO WHATSAPP FLUTUANTE
+       ============================================ -->
+  <a href="https://wa.me/258842644335" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip" data-i18n="whatsapp.tooltip">Fale connosco</span>
+  </a>
+
+  <!-- ============================================
+       MODAL DO PRODUTO
+       ============================================ -->
+  <div class="modal" id="productModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Fechar">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div class="modal-content">
+        <!-- Imagens -->
+        <div class="modal-gallery">
+          <div class="modal-main-image">
+            <img src="" alt="" id="modalMainImage">
+          </div>
+          <div class="modal-thumbnails" id="modalThumbnails">
+            <!-- Miniaturas serão carregadas via JavaScript -->
+          </div>
+        </div>
+        
+        <!-- Informações -->
+        <div class="modal-info">
+          <span class="modal-category" id="modalCategory"></span>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p class="modal-price" id="modalPrice"></p>
+          <p class="modal-description" id="modalDescription"></p>
+          
+          <!-- Seleção de Tamanho -->
+          <div class="modal-option" id="sizeOption">
+            <label data-i18n="modal.size">Tamanho:</label>
+            <div class="option-buttons" id="sizeButtons">
+              <!-- Botões serão carregados via JavaScript -->
+            </div>
+          </div>
+          
+          <!-- Seleção de Sabor -->
+          <div class="modal-option" id="flavorOption">
+            <label data-i18n="modal.flavor">Sabor:</label>
+            <div class="option-buttons" id="flavorButtons">
+              <!-- Botões serão carregados via JavaScript -->
+            </div>
+          </div>
+          
+          <!-- Botões de Ação -->
+          <div class="modal-actions">
+            <a href="#" class="btn btn-whatsapp btn-large" id="whatsappBtn" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+              <span data-i18n="modal.whatsapp">Pedir via WhatsApp</span>
+            </a>
+            <a href="https://wa.me/258842644335" class="btn btn-outline btn-large" target="_blank">
+              <i class="fas fa-question-circle"></i>
+              <span data-i18n="modal.info">Pedir informações</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script src="produtos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
